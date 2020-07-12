@@ -105,19 +105,6 @@ fun getDocumentsList(allSetting:Map<String,Any?>) {
     val file = File("todayList.txt")
     file.writeText(text)
 
-    Runtime.getRuntime().exec("python template_generator.py")
+    Runtime.getRuntime().exec("python sorter.py")
     println("已完成")
 }
-//
-//fun main() {
-//    val allSetting = mapOf(
-//        "timeSetting" to "今天",
-//        "typeSetting" to "所有",
-//        "keywordSetting" to "",
-//        "limitationSetting" to 0,
-//        "cookies" to null,
-//        "modeSetting" to "VPN"
-//                          )
-//    getDocumentsList(allSetting)
-//
-//}

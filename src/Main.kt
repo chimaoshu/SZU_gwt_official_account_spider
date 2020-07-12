@@ -34,7 +34,7 @@ fun theNetworkIsOK (cookies:Map<String, String>?) : Boolean {
 }
 
 fun restartVPN(){
-    Runtime.getRuntime().exec("cmd.exe /c start C:\\inetpub\\wwwroot\\重启VPN.bat")
+    Runtime.getRuntime().exec("cmd.exe /c start 启动easyconnect.bat")
 }
 
 fun main(args: Array<String>)  {
